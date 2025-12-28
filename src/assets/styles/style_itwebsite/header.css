@@ -1,0 +1,55 @@
+.header-site{
+    display: flex;
+    padding: 16px 24px;
+    height: 56px;
+    width: 1124px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 5px rgb(199, 197, 197);
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    left: 108px;
+    top: 24px;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.logo{
+    color: #2D66EE;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list-section{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.list-section li{
+    font-size: 14px;
+    color: #101828;
+}
+
+.contacts {
+    display: flex;
+    gap: 32px;
+}
+
+.contacts p{
+    font-size: 14px;
+    color: #2D66EE;
+    font-weight: 500;
+}
+
+.contacts img{
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
