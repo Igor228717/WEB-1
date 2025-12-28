@@ -1,0 +1,178 @@
+@import "./header.css";
+@import "./footer.css";
+@import "../global.css";
+@import "../utils.css";
+@import "../fonts.css";
+@import "./development.css";
+
+body {
+    background-color: #F2F4F7;
+    font-family: 'Inter', Arial;
+    font-weight: 400;
+    color: #101828;
+}
+
+.main-page {
+    height: 900px;
+    background-image: url('../../img/img-itwebsite/main-img.png');
+    background-size: 60% auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+@media (max-width: 1440px) {
+    .main-page {
+        background-size: auto auto;
+    }
+}
+
+.main-text {
+    position: absolute;
+    top: 160px;
+    margin: 0 108px;
+    width: 600px;
+}
+
+.main-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.blue-text {
+    color: #306FF5;
+}
+
+.main-text p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.consultation-form {
+    width: 676px;
+    height: 186px;
+    position: absolute;
+    top: 444px;
+    left: 108px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    padding: 24px;
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-contacts {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.consultation-form h3 {
+    font-size: 20px;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.consultation-form label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #667085;
+}
+
+.consultation-form input {
+    border: none;
+    border-bottom: 1px solid rgb(183, 182, 182);
+    padding: 8px 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.consultation-form input::placeholder {
+    color: #101828;
+}
+
+.consultation-form button {
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2D66EE;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding-left: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-page {
+        height: 762px;
+        width: 768px;
+        background-image: url('../../img/img-itwebsite/main-img2.png');
+        background-size: auto auto;
+    }
+
+    .main-text {
+        top: 138px;
+        margin: 0 32px;
+        width: 383px;
+    }
+
+    .main-text h2 {
+        font-size: 28px;
+    }
+
+    .consultation-form {
+        width: 382px;
+        height: 356px;
+        top: 374px;
+        left: 32px;
+        padding: 32px;
+    }
+
+    .consultation-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .consultation-form h3 {
+        font-size: 16px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .consultation-form label {
+        font-size: 13px;
+        font-weight: 500;
+        color: #667085;
+    }
+
+    .consultation-form input {
+        font-size: 14px;
+    }
+
+    .consultation-form button {
+        width: 155px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-page {
+        height: 1267px;
+        width: 425px;
+        background-position: center 345px;
+    }
+
+    .main-text {
+        margin: 0 24px;
+    }
+
+    .consultation-form {
+        top: 878px;
+        left: 24px;
+    }
+}
