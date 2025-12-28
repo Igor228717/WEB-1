@@ -1,0 +1,77 @@
+.industries-page {
+    grid-area: industries-page;
+
+    h2 {
+        margin: 80px 108px 0;
+    }
+
+    .industries {
+        margin: 40px 108px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .industries-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            height: 44px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .hide-ind {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        h2 {
+            margin: 30px 40px;
+        }
+
+        .industries {
+            width: 601px;
+            height: 457px;
+            margin: 40px 40px;
+
+            .industries-list {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px 80px;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+            h2 {
+                margin: 30px 16px 0;
+            }
+
+            .industries {
+                width: 369px;
+                margin: 40px 16px;
+                font-size: 14px;
+
+                .industries-list {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px 20px;
+
+                    li {
+                        width: 166px;
+
+                        .hide-ind {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

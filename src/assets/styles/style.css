@@ -1,0 +1,93 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+.test {
+    color: yellow !important;
+}
+
+.test {
+    color: red !important;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+input, textarea {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4.
+}
+
+button {
+    background: linear-gradient(135deg, #3c44cf 0%, #5647ad 50%, #7338b2 100%);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.form-background {
+    background-image: url('../img/form_back.jpg');
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(201, 185, 175);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, #784210 0%, #c6bdb7 100%);
+}
+
+header nav ul {
+    display: inline-flex;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+header nav li {
+    list-style-type: none;
+    position: relative;
+    border-right: 3px solid white;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 3px 0 0 0 rgba(0, 0, 0);
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}

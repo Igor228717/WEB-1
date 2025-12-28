@@ -1,0 +1,181 @@
+.discussing-page {
+    grid-area: discussing-page;
+    background-color: #2D66EE;
+    color: #FFFFFF;
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('../../img/img-itwebsite/dots-back.png');
+        opacity: 0.3;
+        mix-blend-mode: overlay;
+    }
+
+    svg {
+        position: absolute;
+        width: 1440px;
+        height: 258px;
+        margin: 46px 0;
+        opacity: 0.5;
+    }
+
+    .discussing-text {
+        position: relative;
+        z-index: 1;
+        width: 600px;
+        height: 168px;
+        margin: 80px 108px 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h2 {
+            height: 104px;
+        }
+
+        p {
+            height: 40px;
+        }
+    }
+
+    .discussing-form {
+        position: relative;
+        z-index: 1;
+        width: 600px;
+        height: 190px;
+        margin: 80px 24px;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        padding: 24px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-end;
+
+        .discuss-field {
+            width: 552px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+
+            .field-info {
+                width: 264px;
+
+                label {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #667085;
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid rgb(183, 182, 182);
+                    padding: 8px 0;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+
+                input::placeholder {
+                    color: #101828;
+                }
+            }
+        }
+
+        button {
+            width: 178px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: #2D66EE;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            padding: 11px 24px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        flex-direction: column;
+        gap: 30px;
+
+        &::before {
+            opacity: 0.1;
+        }
+
+        svg {
+            width: 704px;
+            height: 159px;
+            margin: 80px 40px;
+            opacity: 1;
+        }
+
+        .discussing-text {
+            width: 344px;
+            height: 152px;
+            margin: 30px 40px 0;
+            margin-bottom: 0;
+
+            h2 {
+                height: 80px;
+            }
+        }
+
+        .discussing-form {
+            margin: 0px 40px;
+        }
+
+        @media (max-width: 425px) {
+
+            gap: 140px;
+
+            svg {
+                width: 394px;
+                height: 88px;
+                margin: 200px 17px;
+            }
+
+            .discussing-text {
+                margin: 34px 16px 0;
+            }
+
+            .discussing-form {
+                width: 393px;
+                height: 300px;
+                margin: 0px 16px;
+                padding: 36px 17px;
+                align-items: flex-start;
+
+                .discuss-field {
+                    width: 358px;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .field-info {
+                        width: 358px;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                button {
+                    display: block;
+                    width: 255px;
+                    margin: 0 55px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,279 @@
+.projects-page {
+    grid-area: projects-page;
+
+    h2 {
+        margin: 40px 108px 0;
+    }
+
+    p {
+        margin: 24px 108px 0;
+        width: 600px;
+    }
+
+    .info-button {
+        width: 1224px;
+        height: 58px;
+        display: flex;
+        gap: 160px;
+        align-items: center;
+        margin: 40px 108px 0;
+
+        .projects-info {
+            width: 801px;
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 20px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 17px;
+                font-weight: 400;
+                color: #1D2939;
+            }
+
+            li:hover {
+                font-weight: bold;
+                border-bottom: 2px solid #2D66EE;
+                padding-bottom: 5px;
+                display: inline-block;
+            }
+        }
+
+        button {
+            width: 207px;
+            height: 40px;
+            border-radius: 8px;
+            border: none;
+            background-color: #2D66EE;
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    .I-teka-container {
+        display: flex;
+
+        img {
+            width: 600px;
+            height: 326px;
+        }
+
+        .project-I-teka {
+            margin: 24px 108px 0;
+            width: 600px;
+            height: 449px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            font-size: 15px;
+            font-weight: 400;
+
+            h2 {
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .bigger-p {
+                font-size: 17px;
+                color: #475467;
+            }
+
+            .info-I-teka {
+                width: 239px;
+                height: 24px;
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .status {
+                width: 252px;
+                height: 59px;
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+
+                h3 {
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                p {
+                    color: #667085;
+                    font-size: 13px;
+                }
+
+                .growth {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    width: 76px;
+                }
+
+                .users {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    width: 128px;
+                }
+            }
+
+            .apps {
+                display: flex;
+                gap: 16px;
+                width: 300px;
+
+                img {
+                    width: 148px;
+                    height: 40px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        h2 {
+            margin: 30px 40px;
+        }
+
+        p {
+            margin-left: 40px;
+            width: 456px;
+        }
+
+        .info-button {
+            width: 673px;
+            display: block;
+            margin-left: 40px;
+
+            .projects-info {
+                width: 673px;
+
+                li {
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                margin: 24px 490px 0;
+            }
+        }
+
+        .I-teka-container {
+
+            img {
+                position: absolute;
+                width: 369px;
+                height: 225px;
+                margin: 165px 370px 0;
+            }
+
+            .project-I-teka {
+                margin: 0px 40px 0;
+                width: 459px;
+                height: 400px;
+                font-size: 14px;
+                font-weight: 400;
+
+                .bigger-p {
+                    font-size: 14px;
+                }
+
+                .info-I-teka {
+                    width: 230px;
+                }
+
+                .status {
+                    width: 231px;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
+
+                    .growth {
+                        width: 71px;
+                    }
+
+                    .users {
+                        width: 107px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 425px) {
+            h2 {
+                margin: 30px 16px;
+            }
+
+            p {
+                margin-left: 16px;
+                width: 339px;
+            }
+
+            .info-button {
+                width: 390px;
+                display: block;
+                margin-left: 16px;
+
+                .projects-info {
+                    width: 300px;
+                }
+
+                button {
+                    width: 258px;
+                    margin: 730px 65px 0;
+                }
+            }
+
+            .I-teka-container {
+                flex-direction: column-reverse;
+
+                img {
+                    position: relative;
+                    width: 393px;
+                    height: 225px;
+                    margin: 32px 16px 0;
+                }
+
+                .project-I-teka {
+                    margin: 35px 16px 0;
+                    width: 393px;
+
+                    p {
+                        width: 393px;
+                    }
+                }
+            }
+        }
+    }
+}
