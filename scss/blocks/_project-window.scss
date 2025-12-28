@@ -1,0 +1,244 @@
+.project-window {
+    padding-left: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.project-window-text1 {
+    padding-top: 10px;
+    width: 339px;
+    height: 60px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+    font-size: 1rem;
+
+    div {
+        display: flex;
+        gap: 15px;
+    }
+
+    a {
+        list-style: none;
+    }
+
+    a:hover {
+        border: none;
+        border-bottom: 2px solid #007bff;
+    }
+}
+
+.big-img {
+    width: 100%;
+
+    img {
+        width: 400px;
+        height: auto;
+    }
+}
+
+.featured-project {
+    position: relative;
+    padding-top: 40px;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
+}
+
+.text {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding-top: 15px;
+    }
+}
+
+.dop-info-1 {
+    font-size: 1.2rem;
+    padding-top: 50px;
+    padding-left: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.dop-info-2 {
+    font-size: 2rem;
+    padding-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.img-and-text {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 30px;
+        height: auto;
+    }
+}
+
+.text-and-text {
+
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding-top: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+.img-googlePlay {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 200px;
+
+    img {
+        width: 180px;
+        height: auto;
+    }
+
+}
+
+.div-button {
+    width: 400px;
+    position: absolute;
+    top: 800px;
+    left: 60px;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #007bff;
+    border-radius: 15px;
+    border: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .project-window-text1 {
+        width: 500px;
+
+    }
+
+    .project-list {
+        flex-direction: row;
+    }
+
+    .big-img {
+        position: absolute;
+        left: 300px;
+        top: 200px;
+
+
+    }
+
+    .div-button {
+        width: 400px;
+        position: absolute;
+        top: 60px;
+        left: 400px;
+    }
+
+    .button {
+        width: 250px;
+        height: 50px;
+        color: white;
+        background-color: #007bff;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .featured-project {
+        h2 {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .project-window-text1 {
+        width: 700px;
+    }
+
+    .project-list {
+        flex-direction: row;
+        gap: 30px;
+
+        div {
+            gap: 30px;
+        }
+    }
+
+    .big-img {
+        left: 500px;
+        top: 200px;
+
+        img {
+            width: 500px;
+        }
+    }
+
+    .div-button {
+        width: 400px;
+        position: absolute;
+        top: 60px;
+        left: 700px;
+    }
+
+    .button {
+        width: 250px;
+        height: 50px;
+        color: white;
+        background-color: #007bff;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .img-googlePlay {
+        display: flex;
+        gap: 10px;
+        padding-top: 70px;
+        padding-bottom: 200px;
+
+        img {
+            width: 180px;
+            height: auto;
+        }
+
+    }
+
+    .text {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            padding-top: 30px;
+        }
+
+        .featured-project {
+            h2 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+.stages-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.stages {
+    .stages-heading {
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        align-items: center;
+
+        h5 {
+            font-size: 1.5rem;
+            margin: 20px;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    width: 393px;
+    height: 214px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.stages-text {
+    padding-top: 30px;
+    width: 270px;
+}
+
+.text-img {
+    display: flex;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: auto;
+        height: 242px;
+    }
+}
+
+.stages-numbers-1 {
+    top: -100px;
+    left: 275px;
+}
+
+.stages-numbers-2 {
+    top: -100px;
+    left: 220px;
+}
+
+.stages-numbers-3 {
+    top: -100px;
+    left: 210px;
+}
+
+.stages-numbers-4 {
+    top: -100px;
+    left: 190px;
+}
+
+.stages-numbers-5 {
+    top: -100px;
+    left: 200px;
+}
+
+.stages-numbers-6 {
+    top: -100px;
+    left: 190px;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    .stages {
+        width: 700px;
+    }
+
+    .stages-text {
+        width: 650px;
+    }
+
+    .stages-numbers-1 {
+        left: 580px;
+    }
+
+    .stages-numbers-2 {
+        left: 530px;
+    }
+
+    .stages-numbers-3 {
+        left: 530px;
+    }
+
+    .stages-numbers-4 {
+        left: 500px;
+    }
+
+    .stages-numbers-5 {
+        left: 530px;
+    }
+
+    .stages-numbers-6 {
+        left: 510px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .stages-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 100px;
+    }
+
+
+    .stages {
+        width: 500px;
+
+        .stages-heading {
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            align-items: center;
+
+            h5 {
+                font-size: 1.5rem;
+                margin: 20px;
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+        }
+
+        width: 393px;
+        height: 214px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 15px;
+        margin-top: 15px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .stages-text {
+        padding-top: 30px;
+        width: 270px;
+    }
+
+    .text-img {
+        display: flex;
+        position: relative;
+
+        img {
+            position: absolute;
+            width: auto;
+            height: 242px;
+        }
+    }
+
+    .stages-numbers-1 {
+        top: -100px;
+        left: 275px;
+    }
+
+    .stages-numbers-2 {
+        top: -100px;
+        left: 220px;
+    }
+
+    .stages-numbers-3 {
+        top: -100px;
+        left: 210px;
+    }
+
+    .stages-numbers-4 {
+        top: -100px;
+        left: 190px;
+    }
+
+    .stages-numbers-5 {
+        top: -100px;
+        left: 200px;
+    }
+
+    .stages-numbers-6 {
+        top: -100px;
+        left: 190px;
+    }
+
+
+
+
+
+}

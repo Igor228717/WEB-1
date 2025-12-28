@@ -1,0 +1,111 @@
+/* Базовые стили для мобильных */
+.burger-menu {
+    display: none;
+}
+
+.burger {
+    height: 30px;
+    width: 30px;
+    border: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger span {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(8, 21, 201);
+}
+
+.menu-mobile-list {
+    list-style: none;
+}
+
+.menu-mobile-list li {
+    padding-top: 25px;
+    font-size: 1.2rem;
+}
+
+.logo-mobile {
+    color: #2D66EE;
+    font-size: 1.5rem;
+    padding-top: 40px;
+}
+
+.contacts-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 80px;
+}
+
+.phone-numbers-mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.email-mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone-numbers-mobile img {
+    width: 20px;
+    height: 20px;
+}
+
+.email-mobile img {
+    width: 20px;
+    height: 20px;
+}
+
+.burger-menu button {
+    position: absolute;
+    top: 40px;
+    left: 350px;
+    border: none;
+    background-color: white;
+}
+
+.burger-menu.active {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (min-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .contacts-mobile {
+        flex-direction: row;
+        gap: 80px;
+    }
+
+    .burger-menu button {
+        left: 500px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .burger {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}

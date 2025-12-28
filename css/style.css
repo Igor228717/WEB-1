@@ -1,0 +1,121 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 300px;
+    overflow-x: hidden;
+}
+
+.grid-1 {
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 30px;
+    gap: 5px;
+}
+
+.grid-1column {
+    margin-left: 40px;
+}
+
+.section-title {
+    font-size: 1.4rem;
+
+}
+
+.grid-2column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.grid-2column a {
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.grid-2column a:hover {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #007bff;
+}
+
+.blue-text {
+    color: #007bff;
+}
+
+.grid-2 {
+    width: auto;
+    padding-top: 50px;
+    margin-left: 40px;
+
+}
+
+.grid-2 h1 {
+    font-size: 1.7rem;
+}
+
+.grid-with-3column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.text-and-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    height: 50px;
+}
+
+.img-for-grid {
+    width: 43px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Планшеты (768px и больше) */
+@media (min-width: 768px) {
+    .grid-1 {
+        flex-direction: row;
+        gap: 200px;
+        padding-left: unset;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .grid-2column {
+        margin-top: 40px;
+    }
+
+    .grid-2column a {
+        margin-top: unset;
+        padding-top: 20px;
+    }
+
+    .grid-2 h1 {
+        padding-bottom: 10px;
+    }
+
+    .grid-with-3column {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Десктопы (769px и больше) */
+@media (min-width: 769px) {
+    .grid-with-3column {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

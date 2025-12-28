@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 0 0;
+    background-color: #101828;
+    color: white;
+
+    h1 {
+        padding-left: 100px;
+        margin: 10px;
+    }
+}
+
+.footer-info-list {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    height: 54px;
+    padding: 10px;
+    display: flex;
+
+
+}
+
+.name {
+    color: #98A2B3;
+}
+
+.div-flex {
+    display: flex;
+
+    img {
+        width: 20px;
+        height: auto;
+        padding-right: 5px;
+    }
+}
