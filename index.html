@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиццерия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+        <div class="pizza-visual">
+            <div class="pizza-glow" id="pizzaGlow"></div>
+
+            <div class="pizza-stage">
+                <img class="pizza-img active" id="img-MARGARITA" src="img/pizza-margarita.png" alt="Маргарита">
+                <img class="pizza-img" id="img-PEPPERONI" src="img/pizza-pepperoni.png" alt="Пепперони">
+                <img class="pizza-img" id="img-BAVARIAN" src="img/pizza-bavarian.png" alt="Баварская">
+            </div>
+        </div>
+
+        <div class="pizza-card">
+
+            <h2>Выбор пиццы</h2>
+            <p class="subtitle">Собери свою идеальную пиццу</p>
+            <div class="divider"></div>
+
+            <div class="field-label">Вид пиццы</div>
+            <div class="pill-group" id="typeGroup">
+                <button class="pill active" data-value="MARGARITA">Маргарита</button>
+                <button class="pill" data-value="PEPPERONI">Пепперони</button>
+                <button class="pill" data-value="BAVARIAN">Баварская</button>
+            </div>
+
+            <div class="field-label" style="margin-top:24px">Размер</div>
+            <div class="pill-group" id="sizeGroup">
+                <button class="pill active" data-value="SMALL">Маленькая</button>
+                <button class="pill" data-value="LARGE">Большая</button>
+            </div>
+
+            <h3>Добавки</h3>
+            <div class="toppings-grid">
+
+                <label class="topping-label">
+                    <div class="check-box">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <polyline points="2,6 5,9 10,3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input type="checkbox" value="MOZZARELLA">
+                    <span>Моцарелла</span>
+                    <div class="topping-img-wrap">
+                        <img src="img/topping-mozzarella.png" alt="Моцарелла" class="topping-img">
+                    </div>
+                </label>
+
+                <label class="topping-label">
+                    <div class="check-box">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <polyline points="2,6 5,9 10,3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input type="checkbox" value="CHEESE_BORDER">
+                    <span>Сырный борт</span>
+                    <div class="topping-img-wrap">
+                        <img src="img/topping-cheese-border.png" alt="Сырный борт" class="topping-img">
+                    </div>
+                </label>
+
+                <label class="topping-label">
+                    <div class="check-box">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <polyline points="2,6 5,9 10,3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <input type="checkbox" value="CHEDDAR_PARMESAN">
+                    <span>Чеддер и пармезан</span>
+                    <div class="topping-img-wrap">
+                        <img src="img/topping-cheddar.png" alt="Чеддер и пармезан" class="topping-img">
+                    </div>
+                </label>
+
+            </div>
+
+            <button id="result">Добавить в корзину</button>
+
+        </div>
+    </div>
+
+    <script src="pizza.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
